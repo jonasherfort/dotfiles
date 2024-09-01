@@ -1,5 +1,5 @@
 {{- $name := "Jonas Herfort" -}}
-{{- $email := "jdreyoe@gmail.com@gmail.com" -}}
+{{- $email := "jdreyoe@gmail.com" -}}
 
 {{- $chezmoiForce := or (has "--force" .chezmoi.args) (has "--force=true" .chezmoi.args) -}}
 {{- $interactive := and stdinIsATTY (not $chezmoiForce) -}}
