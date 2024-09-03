@@ -1,0 +1,27 @@
+brew --version
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/jonas/.config/zsh/.zshrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+sudo apt-get install build-essential
+brew install gcc
+exit
+brew --version
+brew install romkatv/powerlevel10k/powerlevel10k
+brew install zsh-autosuggestions zsh-syntax-highlighting
+brew install fzf thefuck zoxide
+brew install zsh-autosuggestions zsh-syntax-highlighting
+source ~/.config/zsh/.zshrc
+brew install romkatv/powerlevel10k/powerlevel10k
+exit
+echo $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+echo $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh\
+echo $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh\
+
+which fzf\
+which thefuck\
+which zoxide\
+
+exit
+cd ~
+ls
+exit

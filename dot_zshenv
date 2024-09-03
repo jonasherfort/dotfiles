@@ -1,0 +1,27 @@
+# path stuff
+export XDG_CONFIG_HOME="$HOME/.config"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
+## Fix brew on path
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Source our .zshrc
+source $ZDOTDIR/.zshrc
+
+
+
+# XDG and Zsh configuration directories
+export XDG_CONFIG_HOME="$HOME/.config"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# Fix brew in PATH
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+
+# Add custom local paths before others
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
+# Source our .zshrc (make sure this is last)
+source $ZDOTDIR/.zshrc

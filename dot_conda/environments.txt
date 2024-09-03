@@ -1,0 +1,2 @@
+/home/jonas/miniforge3
+/home/jonas/miniforge3/envs/jonas_base

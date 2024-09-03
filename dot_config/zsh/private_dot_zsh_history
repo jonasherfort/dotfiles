@@ -1,0 +1,102 @@
+
+brew install oh-my-posh
+oh-my-posh themes
+oh-my-posh --help
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+exec zsh
+which batcat
+ls -l ~/.local/bin/bat
+echo $PATH
+which bat
+mkdir -p "$(bat --config-dir)/themes"
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme\
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme\
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme\
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
+bat cache --build
+bat --list-theme
+bat --list-themes
+bat
+bat --help
+bat NTUSER.DAT
+pwd
+ls -a
+bat .profile
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"\
+bash Miniforge3-$(uname)-$(uname -m).sh
+conda init --reverse --dry-run
+conda activate
+conda config --set auto_activate_base false
+conda create -n jonas_base scipy numpy pandas matplotlib seaborn scikit-learn jupyterlab
+cd ~
+conda env list
+sudo apt install pipx
+pipx install cookiecutter-data-science
+pipx install aider-chat
+python --version
+conda update
+conda update conda
+sudo apt update && sudo apt upgrade
+sudo apt install less
+sudo apt install jq tmux file procps
+pipx ensurepath
+brew update
+brew install jesseduffield/lazygit/lazygit
+git clone https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/.tmux/plugins/tpm
+mkdir $XDG_CONFIG_HOME/tmux
+touch $XDG_CONFIG_HOME/tmux/tmux.conf
+nano $XDG_CONFIG_HOME/tmux/tmux.conf
+# type this in terminal if tmux is already running\
+tmux source $XDG_CONFIG_HOME/tmux/tmux.conf
+# type this in terminal if tmux is already running\
+tmux source ~/.tmux.conf
+tmux -V
+tmux source ~/.config/tmux/tmux.conf
+ls -l ~/.tmux/plugins/tpm/tpm
+mkdir -p "$XDG_CONFIG_HOME/tmux/plugins"
+git clone https://github.com/tmux-plugins/tpm "$XDG_CONFIG_HOME/tmux/plugins/tpm"
+ls -l "$XDG_CONFIG_HOME/tmux/plugins/tpm/tpm"
+tmux source "$XDG_CONFIG_HOME/tmux/tmux.conf"
+nano "$XDG_CONFIG_HOME/tmux/tmux.conf"
+tmux source-file ~/.tmux.conf
+unset TMUX
+tmux
+tmux source-file $XDG_CONFIG_HOME/tmux/tmux.conf
+ls $XDG_CONFIG_HOME/tmux/plugins
+tmux kill-server
+exit
+: 1725405968:0;pwd
+: 1725405971:0;cd ~
+: 1725405973:0;ls -a
+: 1725405985:0;rm -rf .tmux
+: 1725406051:0;tmux
+: 1725406057:0;ls $XDG_CONFIG_HOME/tmux/plugins
+: 1725406060:0;tmux source-file $XDG_CONFIG_HOME/tmux/tmux.conf
+: 1725406063:0;ls $XDG_CONFIG_HOME/tmux/plugins
+: 1725406147:0;~/.tmux/plugins/tpm/bin/install_plugins
+: 1725406167:0;$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins
+: 1725406185:0;$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/update_plugins all
+: 1725406199:0;ls $XDG_CONFIG_HOME/tmux/plugins
+: 1725406322:0;$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins
+: 1725406327:0;tmux source-file $XDG_CONFIG_HOME/tmux/tmux.conf
+: 1725406337:0;$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins
+: 1725406416:0;tmux kill-server
+: 1725406428:0;chezmoi --init
+: 1725406431:0;chezmoi
+: 1725406441:0;chezmoi unmanaged
+: 1725406455:0;chezmoi add .zshenv
+: 1725406464:0;chezmoi add .bashrc
+: 1725406469:0;chezmoi add .conda
+: 1725406473:0;chezmoi add .condarc
+: 1725406481:0;ls
+: 1725406484:0;pwd
+: 1725406488:0;ls -a
+: 1725406495:0;chezmoi add .config
+: 1725406513:0;ls .config -a
+: 1725406562:0;chezmoi add --exclude=chezmoi .config
+: 1725406627:0;mv ~/.config/chezmoi ~/.local/share/chezmoi
+: 1725406642:0;echo $XDG_DATA_HOME
+: 1725406655:0;export XDG_DATA_HOME="$HOME/.local/share"
+: 1725406710:0;chezmoi source-path
+: 1725406717:0;chezmoi add .config
